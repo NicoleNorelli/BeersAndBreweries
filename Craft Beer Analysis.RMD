@@ -82,9 +82,7 @@ medianIBU = summarise(by_state, IBU=median(IBU,na.rm=TRUE))
 medianABV = summarise(by_state, ABV=median(ABV,na.rm=TRUE))
 medianIBU <- filter(medianIBU, !is.na(IBU))
 medianABV <- filter(medianABV, !is.na(ABV))
-medianIBU %>% arrange(desc(IBU)) %>% gt() %>% tab_header(title="Median IBU by State")
 datatable(medianIBU, rownames=F, filter="top",caption="Median IBU by State",options=list(pageLength=10,scrollX=T))
-medianABV %>% arrange(desc(ABV)) %>% gt() %>% tab_header(title="Median ABV by State")
 datatable(medianABV, rownames=F, filter="top",caption="Median ABV by State",options=list(pageLength=10,scrollX=T))
 medianIBU %>% ggplot(aes(x= fct_reorder(State,IBU), y=IBU, fill=IBU)) + geom_bar(stat="identity") +
   geom_text(aes(State,IBU+1, label=IBU,fill=NULL),data=medianIBU,size=2) + 
