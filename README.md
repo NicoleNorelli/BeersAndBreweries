@@ -13,7 +13,7 @@ Some of these comparisons include:
   
   -Most popular craft beer style in each state
   
-  -Beer with the highest ABV leve and beer with the highest IBU level
+  -Beer with the highest ABV level and beer with the highest IBU level
   
   
 This project also includes code that allows machine learning models to help classify a beer style based off of ABV and IBU data.
