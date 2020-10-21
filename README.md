@@ -7,7 +7,7 @@ Some of these comparisons include:
   
   -The median ABV and IBU levels of beers in each state
   
-  -Median ABV and IBU leves of beers in each census region
+  -Median ABV and IBU levels of beers in each census region
   
   -Correlation of IBU and ABV levels of Craft beers
   
